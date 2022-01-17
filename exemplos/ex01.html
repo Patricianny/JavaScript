@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <p>Player 1: Patty</p>
+    <script type="text/javascript">
+
+      var para = document.querySelector('p');
+
+      para.addEventListener('click', atualizarNome);
+
+      function atualizarNome(){
+        var nome = prompt('Insira um novo Nome');
+        para.textContent = 'Player 1: ' + nome;
+      }
+    </script>
+
+  </body>
+</html>
